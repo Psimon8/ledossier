@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pater Timer - Chronomètre de Parole</title>
+    <meta name="description" content="Un chronomètre premium pour suivre le temps de parole de Pater avec précision et élégance.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-glow"></div>
+    <main class="container">
+        <header>
+            <h1>Pater Timer</h1>
+            <p class="subtitle">Suivi du temps de parole</p>
+        </header>
+
+        <section class="timer-card">
+            <div class="status-indicator">
+                <span class="dot"></span>
+                <span id="status-text">SILENCE</span>
+            </div>
+            
+            <div class="timer-display" id="timer">00:00:00</div>
+            
+            <div class="controls">
+                <button id="start-stop-btn" class="btn primary">
+                    <span class="btn-text">Démarrer</span>
+                    <div class="btn-glow"></div>
+                </button>
+                <button id="reset-btn" class="btn secondary">Réinitialiser</button>
+            </div>
+        </section>
+
+        <footer>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-label">Sessions</span>
+                    <span id="session-count" class="stat-value">0</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-label">Record</span>
+                    <span id="max-time" class="stat-value">00:00</span>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
